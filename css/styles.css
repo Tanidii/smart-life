@@ -1,0 +1,111 @@
+/* Add Font Awesome Styles */
+/* Add Font Awesome Styles */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+/* Add Google Font - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --background-color-light: rgb(255, 255, 255);
+  --text-color-light: #000000;
+
+  --background-color-dark: rgb(18, 18, 18);
+  --text-color-dark: #ffffff;
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Roboto', sans-serif; /* Change the font here */
+}
+
+body.dark-theme {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.navbar {
+  background-color: var(--background-color-light);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.navbar .dark-theme {
+  background-color: var(--background-color-dark);
+  box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+
+
+/* .fixed-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+} */
+
+.banner,
+.about-us,
+.sdg-education,
+.smart-learning-solutions,
+.community-learning,
+.blog,
+.events,
+.partnerships,
+.resource-hub,
+.contact {
+  padding: 60px 0;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+}
+
+.banner p {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.banner-img {
+    /* height: 500px;  */
+    object-fit: cover; 
+}
+
+/* .carousel-control-prev,
+.carousel-control-next {
+    display: none;
+} */
+
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.dark-mode-toggle {
+  margin-left: 10px;
+}

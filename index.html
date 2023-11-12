@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Smart Education</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+
+    <!-- Add this script to the head of your HTML -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand order-lg-first" href="#">Smart Education</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-us" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sdg-education" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">SDG Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#smart-learning-solutions" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">Smart Learning Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#community-learning" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">Community Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#partnerships" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">Partnerships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resource-hub" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button id="darkModeToggle" class="btn btn-outline-secondary" type="button"
+                        onclick="toggleDarkMode()" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                        <i class="fas fa-adjust"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand order-lg-first" href="#">Smart Education</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sdg-education">SDG Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#smart-learning-solutions">Smart Learning Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community-learning">Community Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partnerships">Partnerships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resource-hub">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-outline-secondary" type="button"
+                            onclick="toggleDarkMode()">
+                            <i class="fas fa-adjust"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section with Carousel without Card -->
+    <section class="banner" id="home">
+        <div class="container-fluid"> <!-- Use container-fluid to make it full width -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Welcome to Smart Education</h1>
+                    <p>Promoting Quality Education through Innovation and Technology</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- Dynamic Carousel -->
+                    <div id="dynamicCarousel" class="carousel slide" data-ride="carousel">
+                        <div id="dynamicCarouselInner" class="carousel-inner">
+                            <!-- Carousel items will be dynamically generated here -->
+                        </div>
+                        <a class="carousel-control-prev" href="#dynamicCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#dynamicCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- End of Dynamic Carousel -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-description">Welcome to Smart Education, where learning meets innovation. We are
+                        on a
+                        mission to transform education through the power of technology, making quality learning
+                        accessible to everyone.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/aboutUs/about-us.jpg" alt="About Us Image" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SDG Education Section -->
+    <section class="sdg-education" id="sdg-education">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>SDG Education - Quality Education for All</h2>
+                    <p>Explore how we contribute to achieving Sustainable Development Goal 4 - Quality Education.
+                        Through interactive programs and modern technology, we aim to make education inclusive and
+                        equitable for everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart learning solutions -->
+    <section class="smart-learning-solutions" id="smart-learning-solutions">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Smart Learning Solutions</h2>
+                        <p>Discover how our smart learning solutions leverage technology to enhance the educational
+                            experience. From AI-driven platforms to virtual reality classrooms, we're shaping the future
+                            of
+                            education.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="embed-responsive embed-responsive-16by9"
+                                style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                                <iframe class="embed-responsive-item" title="Smart learning solutions"
+                                    src="https://www.youtube.com/embed/1wy1hwZgHdA" allowfullscreen
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Learning Section -->
+    <section class="community-learning" id="community-learning">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Community Learning</h2>
+                    <p>Join our community of educators, students, and tech enthusiasts. Share your experiences with
+                        smart learning tools and participate in discussions that shape the future of education.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Blog Posts</h2>
+                </div>
+                <div class="card-body">
+                    <!-- Blog posts are dynamically handled here -->
+                    <div id="dynamicBlogPosts" class="row row-cols-1 row-cols-md-3 g-4"></div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="blogModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modalDate"></p>
+                            <p id="modalAuthor"></p>
+                            <img id="modalImage" class="img-fluid" alt="Blog Post Image">
+                            <!-- <p id="modalExcerpt"></p> -->
+                            <div id="modalDescription" class="mt-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Events and Webinars</h2>
+                    <p>Explore upcoming events, webinars, and conferences focused on smart education. Can't attend live?
+                        Access recorded sessions and stay informed about the latest developments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section class="partnerships" id="partnerships">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Partnerships</h2>
+                    <p>Discover our collaborations with organizations and companies actively contributing to quality
+                        education through technology. Explore sponsorship opportunities to support our educational
+                        initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Hub Section -->
+    <section class="resource-hub" id="resource-hub">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Resource Hub</h2>
+                    <p>Access valuable resources such as e-books, whitepapers, and guides on smart learning practices
+                        and quality education. Explore external links for further reading on the intersection of
+                        technology and education.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Contact Us</h2>
+                            <p class="card-text">Have questions, partnership inquiries, or want to share your story?
+                                Reach
+                                out to us using the form below.</p>
+
+                            <!-- Contact Form -->
+                            <form id="contact-form" method="post" action="process-form.php">
+                                <!-- Name Input -->
+                                <div class="form-group">
+                                    <label for="name">Your Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+
+                                <!-- Email Input -->
+                                <div class="form-group">
+                                    <label for="email">Your Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+
+                                <!-- Message Input -->
+                                <div class="form-group">
+                                    <label for="message">Your Message:</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5"
+                                        required></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            <!-- End Contact Form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Smart Education. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom script -->
+    <script src="./scripts/scripts.js"></script>
+
+</body>
+
+</html>
